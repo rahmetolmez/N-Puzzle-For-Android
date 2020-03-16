@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.tribow.npuzzle.MainActivity">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="New Game"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_optThemes"
+        android:orderInCategory="100"
+        android:title="Themes"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_optCredits"
+        android:orderInCategory="100"
+        android:title="Credits"
+        app:showAsAction="never" />
+</menu>

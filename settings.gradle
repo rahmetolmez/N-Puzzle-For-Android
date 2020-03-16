@@ -1,0 +1,2 @@
+include ':N-Puzzle'
+rootProject.name='N-Puzzle'

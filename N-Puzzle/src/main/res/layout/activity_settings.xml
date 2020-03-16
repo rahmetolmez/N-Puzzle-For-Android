@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivitySettings"
+    android:theme="@style/AppTheme">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/description"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_bricks_blue">
+
+    </ImageView>
+
+    <LinearLayout android:id="@+id/as_layout"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="horizontal" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="160dp"
+        android:layout_height="489dp"
+        android:background="#16000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/scrollView3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tv_vibration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Music"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:fontFamily="@font/gals"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Vibration"
+                android:textAlignment="center"
+                android:layout_marginTop="20dp"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:fontFamily="@font/gals"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/Dark_Mode"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:fontFamily="@font/gals"
+                android:textSize="24sp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="95dp"
+        android:layout_height="489dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/scrollView2"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ToggleButton
+                android:id="@+id/tb_music"
+                android:layout_width="78dp"
+                android:layout_height="35dp"
+                android:background="@drawable/n_button"
+                android:shadowColor="#E91E63"
+                android:text="ToggleButton"
+                android:textOn="@string/ON"
+                android:textOff="@string/OFF"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textColorHighlight="#E91E63"
+                android:fontFamily="@font/gals"
+                android:textStyle="bold" />
+
+            <ToggleButton
+                android:id="@+id/tb_vibration"
+                android:layout_width="78dp"
+                android:layout_height="35dp"
+                android:background="@drawable/n_button"
+                android:shadowColor="#E91E63"
+                android:layout_marginTop="20dp"
+                android:text="ToggleButton"
+                android:textOn="@string/ON"
+                android:textOff="@string/OFF"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textColorHighlight="#E91E63"
+                android:fontFamily="@font/gals"
+                android:textStyle="bold" />
+
+            <ToggleButton
+                android:id="@+id/tb_darkMode"
+                android:layout_marginTop="20dp"
+                android:layout_width="78dp"
+                android:layout_height="35dp"
+                android:background="@drawable/n_button"
+                android:shadowColor="#E91E63"
+                android:text="ToggleButton"
+                android:textOn="@string/ON"
+                android:textOff="@string/OFF"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textColorHighlight="#E91E63"
+                android:fontFamily="@font/gals"
+                android:textStyle="bold" />
+        </LinearLayout>
+        >
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
